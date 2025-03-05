@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Helloworld Angular App'; // Existing title
-  message = 'Hello from BridgeLabz'; // New message for interpolation
+  title = 'Helloworld Angular App';
+
+  // Property Binding for Image
+  bridgeLabzLogo: string = './assets/BL_logo_square_jpg.jpg';
 }
