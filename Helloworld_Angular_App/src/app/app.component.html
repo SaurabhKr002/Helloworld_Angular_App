@@ -2,5 +2,8 @@
     <h1>Hello {{ userName }} from BridgeLabz</h1> 
     <img [src]="bridgeLabzLogo" alt="BridgeLabz Logo" (click)="openBridgeLabz()" style="cursor: pointer;">
     <br><br>
-    <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+    
+    <input type="text" [(ngModel)]="userName" (input)="validateUserName()" placeholder="Enter your name">
+    
+    <p *ngIf="userNameError" style="color: red;">{{ userNameError }}</p> <!-- Error Message -->
 </div>
